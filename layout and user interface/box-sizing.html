@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<style>
+      
+     .box{
+     	background-color: #f99;
+     	margin: 5px;
+     	padding: 100px;
+     	text-align: center;
+     	border: 5px solid #555;
+     	width: 320px;
+     }
+      .box-1{
+      	-webkit-box-sizing: content-box;
+      	-moz-box-sizing: content-box;
+     	box-sizing: content-box;
+     }
+      .box-2{
+      	-webkit-box-sizing: border-box;
+      	-moz-box-sizing: border-box;
+     	box-sizing: border-box;
+     }
+      .box-3{
+      	-webkit-box-sizing: padding-box;
+      	-moz-box-sizing: padding-box;
+     	box-sizing: padding-box;
+     }
+	</style>
+</head>
+<body>
+	
+		<div class="box box-1"><p>
+			IPhone High Life salvia single-origin coffee tofu direct trade. Distillery fingerstache actually Austin, meggings 8-bit roof party kitsch ugh cred Vice farm-to-table craft beer Marfa. four dollar toast, disrupt blog gentrify hella typewriter ugh 8-bit Vice kogi.
+		</p>
+		</div>
+		<div class="box box-2"><p>
+			XOXO DIY jean shorts Schlitz ennui fingerstache small batch scenester. Marfa sustainable banjo pickled letterpress, artisan cliche hella scenester taxidermy distillery Godard. Keytar Godard 
+		</p>
+		</div>
+		<div class="box box-3">
+		 <p>
+		 	 Schlitz YOLO squid, fashion axe health goth ennui cold-pressed. Butcher kale chips irony, gastropub Vice semiotics Odd Future gluten-free leggings artisan.
+		 </p>
+		</div>
+		
+	
+	<a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">More Info</a>
+</body>
+</html>
