@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selectors</title>
+	<style>
+      ul, li{
+      	margin-top: 5px;
+      	outline: solid 1px #555;
+      	padding-top: 5px;
+      	padding-bottom: 5px;
+      }
+      li{
+      	padding-left: 5px;
+      }
+      .greatgrandparent{
+      	background-color: pink;
+      }
+      .grandparent{
+      	background-color: lightblue;
+      }
+      .parent{
+      	background-color: lightgreen;
+      }
+      .child{
+      	background-color: lightgrey;
+      }
+
+      /* ------------ */
+
+      li {}
+      .container {}
+      .container li{}
+
+      /* direct child */
+      .greatgrandparent-1 > li{ outline: solid 6px blue; }
+
+     /* general sibling */
+     .parent-special .child-2 ~ li{ color: red;}
+    /* adjacent sibling */
+    .parent-special .child-2 + li { outline: solid 3px red;}
+
+	</style>
+</head>
+<body>
+  <div id="container" class="container">
+  	<ul class="greatgrandparent greatgrandparent-1">
+  		<li class="grandparent grandparent-1">Grandparent 1
+  		<ul class="parent parent-1 parent-special">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  			<li class="child child-4">Child 4</li>
+  			<li class="child child-5">Child 5</li>
+  		</ul>
+  		<ul class="parent parent-2">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		</li>
+  		<li class="grandparent grandparent-1">Grandparent 2
+  		<ul class="parent parent-1">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		<ul class="parent parent-2">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		</li>
+  		<li class="grandparent grandparent-3">Grandparent 3
+  		<ul class="parent parent-1">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		<ul class="parent parent-2">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		</li>
+  		<li class="grandparent grandparent-4">Grandparent 4
+  		<ul class="parent parent-1">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		<ul class="parent parent-2">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		</li>
+  		<li class="grandparent grandparent-5">Grandparent 5
+  		<ul class="parent parent-1">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		
+  		</ul>
+  		<ul class="parent parent-2">
+  			<li class="child child-1">Child 1</li>
+  			<li class="child child-2">Child 2</li>
+  			<li class="child child-3">Child 3</li>
+  		</ul>
+  		</li>
+  	</ul>
+  </div><!--END id="container"-->
+  <div class="links">
+  	<ul>
+  		<li><a href="sample.pdf">Sample Form</a></li>
+  		<li><a href="">Email</a></li>
+  		<li><a href="">Google</a></li>
+  		<li><a href="sample.pdf">Yahoo</a></li>
+  		<li><a href="">Maps</a></li>
+  		<li><a href="">Mozzila</a></li>
+  	</ul>
+  </div>
+</body>
+</html>
