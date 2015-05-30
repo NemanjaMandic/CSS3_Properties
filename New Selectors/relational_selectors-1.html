@@ -36,8 +36,22 @@
 
      /* general sibling */
      .parent-special .child-2 ~ li{ color: red;}
+
     /* adjacent sibling */
     .parent-special .child-2 + li { outline: solid 3px red;}
+
+    /* attribute selectors */
+    a[href] { color: darkblue; }
+    a[href="sample.pdf"] { color: red; }
+
+    /* primer za sve sto sadrzi .pdf ekstenziju */
+    a[href$=".pdf"]{
+      color: red;
+      background-image: url(pdf-ikona.png);
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+    }
 
 	</style>
 </head>
@@ -116,7 +130,8 @@
   		<li><a href="">Google</a></li>
   		<li><a href="sample.pdf">Yahoo</a></li>
   		<li><a href="">Maps</a></li>
-  		<li><a href="">Mozzila</a></li>
+  		<li><a>No href here</a></li>
+
   	</ul>
   </div>
 </body>
