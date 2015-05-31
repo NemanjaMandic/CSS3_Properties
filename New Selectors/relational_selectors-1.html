@@ -53,6 +53,36 @@
       padding-left: 20px;
     }
 
+   /* pseudo klase */
+    li:first-child{
+      outline: solid 4px red;
+   }
+   li:last-child{
+     outline: solid 4px blue;
+   }
+   .child:nth-child(2){
+    opacity: 0.6;
+   }
+
+/* pseudo-elements */
+
+  .parent-special .child-1:first-letter{
+    font-size: 1.5em;
+  }
+  .parent-special .child-1:first-line{
+    color: orange;
+    font-weight: bold;
+  }
+  .parent-special .child-1::after{
+    content: "Zdravo !";
+    color: green;
+  }
+   .parent-special .child-1::before{
+    content: "*";
+    
+  }
+  ::-moz-selection { background-color: #0cf; }
+  ::selection { background-color: #0cf; }
 	</style>
 </head>
 <body>
@@ -60,7 +90,9 @@
   	<ul class="greatgrandparent greatgrandparent-1">
   		<li class="grandparent grandparent-1">Grandparent 1
   		<ul class="parent parent-1 parent-special">
-  			<li class="child child-1">Child 1</li>
+  			<li class="child child-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus augue ac eros tincidunt, nec finibus tellus venenatis. Quisque ut neque eget libero tincidunt ultricies eu sed elit. In auctor dictum dictum. Duis congue nunc nec eros tempor gravida. Nullam faucibus urna eu augue efficitur, vel ullamcorper mi pharetra. Ut non mauris non dolor aliquam laoreet a ut eros. Cras condimentum arcu non tellus venenatis, eget faucibus eros tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi libero, fermentum et ante facilisis, laoreet porttitor nunc. Quisque et molestie ex, at porta urna. Nulla eros augue, dapibus sit amet neque sit amet, ultricies ultricies lectus. Integer tincidunt tempor vestibulum. In odio eros, gravida eu elit quis, eleifend eleifend urna. Proin sagittis eros ut euismod ultricies.
+
+</li>
   			<li class="child child-2">Child 2</li>
   			<li class="child child-3">Child 3</li>
   			<li class="child child-4">Child 4</li>
@@ -131,7 +163,8 @@
   		<li><a href="sample.pdf">Yahoo</a></li>
   		<li><a href="">Maps</a></li>
   		<li><a>No href here</a></li>
-
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Pseudo Klase</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">Pseudo elementi ::after, ::before itd.</a></li>
   	</ul>
   </div>
 </body>
