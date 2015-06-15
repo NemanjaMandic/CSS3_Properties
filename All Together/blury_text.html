@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blury Style</title>
+
+	<style>
+        
+        .blurable {
+        	transition: all 0.5s linear;
+        }
+        .blurry {
+        	color: transparent;
+        	text-shadow: 0 0 5px black;
+        }
+	</style>
+	<script type="text/javascript">
+      setTimeout(function(){
+
+      	var elem = document.getElementById('blur-me');
+      	elem.className += ' blurry';
+      	alert('The text should be blury while this alert is visible. Press OK to make it clear');
+      	elem.className = elem.className.replace(' blurry', '');
+      	//remove the class blurry
+      },3000);
+	</script>
+</head>
+<body>
+  <div id="blur-me" class="blurable">
+  	<p>
+  		Heirloom tousled taxidermy, American Apparel ugh craft beer Vice. Jean shorts kale chips fixie PBR&B pug, aesthetic occupy deep v hoodie keytar before they sold out +1 polaroid plaid migas. Pitchfork chia cred twee deep v keytar, selvage raw denim. Ugh yr Bushwick, biodiesel artisan Odd Future irony meggings direct trade beard photo booth. Locavore gastropub viral listicle bespoke, twee organic flannel squid direct trade. Four loko ugh keytar pickled fingerstache, salvia tousled crucifix raw denim flannel PBR&B. Vice narwhal selvage tote bag Portland.</p>
+
+<p>Cold-pressed mixtape slow-carb, vinyl chillwave authentic health goth Austin Godard flexitarian cred before they sold out Neutra. Wolf Vice actually single-origin coffee, hella street art disrupt High Life hashtag Helvetica. Photo booth plaid slow-carb, brunch cardigan vinyl fixie. Selvage mustache cardigan shabby chic you probably haven't heard of them scenester. Shoreditch authentic biodiesel High Life XOXO cliche, pour-over twee brunch swag irony stumptown seitan. You probably haven't heard of them Tumblr distillery, squid Blue Bottle fap roof party sriracha shabby chic health goth PBR locavore. Heirloom sartorial cold-pressed meh messenger bag plaid.</p>
+
+<p>Paleo four dollar toast Neutra +1 ugh banh mi skateboard. Thundercats jean shorts Austin twee Portland. Ennui Thundercats selvage keffiyeh tote bag Banksy, narwhal church-key keytar DIY. Craft beer Vice bespoke, chia disrupt Etsy literally photo booth cold-pressed squid semiotics Marfa. Four loko fixie mustache keytar narwhal. Twee gastropub Marfa try-hard tilde polaroid. Drinking vinegar cold-pressed try-hard leggings.</p>
+
+<p>Gentrify selvage brunch artisan post-ironic. Crucifix four dollar toast mustache, umami fashion axe art party ennui seitan flexitarian Echo Park Blue Bottle four loko beard disrupt. Mustache flexitarian bicycle rights, semiotics chambray gastropub typewriter messenger bag seitan Schlitz flannel. Tilde tousled Odd Future Tumblr, viral pop-up flannel lo-fi fingerstache slow-carb dreamcatcher art party bitters kitsch. Hashtag plaid Odd Future asymmetrical, vegan paleo single-origin coffee street art Intelligentsia flannel whatever aesthetic stumptown lo-fi. Put a bird on it squid lomo before they sold out, Williamsburg Marfa Kickstarter meggings craft beer church-key fanny pack 90's. Beard slow-carb twee fingerstache, Intelligentsia gentrify YOLO try-hard retro selfies small batch gluten-free butcher.
+  	</p>
+  </div>
+</body>
+</html>
